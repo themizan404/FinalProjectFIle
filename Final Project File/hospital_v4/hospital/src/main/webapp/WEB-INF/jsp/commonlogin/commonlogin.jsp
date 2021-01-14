@@ -5,8 +5,8 @@
 <div class="container text-center" style="margin-top: 50px;margin-bottom: 150px;">
     <div class="row">
         <div class="col text-center"><a href="adminlogin"><button class="btn btn-primary btn-lg text-uppercase" data-bs-hover-animate="pulse" type="button" style="height: 60px;width: 140px;font-size: 25px;"><strong>Admin</strong><br></button></a></div>
-        <div class="col"><a href="doctorlogin"><button class="btn btn-success btn-lg text-uppercase" data-bs-hover-animate="pulse" type="button" style="height: 60px;width: 140px;font-size: 25px;"><strong>doctor</strong><br></button></a></div>
-        <div class="col"><a href="stafflogin"><button class="btn btn-warning btn-lg text-uppercase" data-bs-hover-animate="pulse" type="button" style="height: 60px;width: 140px;font-size: 25px;"><strong>staff</strong><br></button></a></div>
+        <div class="col"><a href="doctorlogin"><button class="btn btn-success btn-lg text-uppercase" data-bs-hover-animate="pulse" type="button" style="height: 60px;width: 140px;font-size: 25px;"><strong>Doctor</strong><br></button></a></div>
+        <div class="col"><a href="stafflogin"><button class="btn btn-warning btn-lg text-uppercase" data-bs-hover-animate="pulse" type="button" style="height: 60px;width: 140px;font-size: 25px;"><strong>Staff</strong><br></button></a></div>
     </div>
 </div>
 

@@ -23,7 +23,9 @@ com\spring\maven\service\DoctorService.class
 com\spring\maven\service\EmployeeService.class
 com\spring\maven\controller\impl\IDepartmentController.class
 com\spring\maven\dao\AdminDAO.class
+com\spring\maven\controller\impl\IOnlineAppointmentController.class
 com\spring\maven\service\LaboratoryService.class
+com\spring\maven\service\OnlineAppointmentService.class
 com\spring\maven\dao\impl\IDoctorDAO.class
 com\spring\maven\service\AdminService.class
 com\spring\maven\dao\impl\IDepartmentDAO.class
@@ -32,6 +34,7 @@ com\spring\maven\common\ICommonController.class
 com\spring\maven\controller\AdminController.class
 com\spring\maven\controller\IndexController.class
 com\spring\maven\dao\MedicineDAO.class
+com\spring\maven\service\impl\IOnlineAppointmentService.class
 com\spring\maven\dao\StaffDAO.class
 com\spring\maven\controller\impl\IEmployeeController.class
 com\spring\maven\common\ICommonDAO.class
@@ -43,13 +46,17 @@ com\spring\maven\dao\impl\IEmployeeDAO.class
 com\spring\maven\controller\impl\IAdminController.class
 com\spring\maven\dao\impl\IStaffDAO.class
 com\spring\maven\model\Admin.class
+com\spring\maven\controller\OnlineAppointmentController.class
 com\spring\maven\model\OnlineAppointment.class
 com\spring\maven\controller\DoctorController.class
 com\spring\maven\service\impl\IMedicineService.class
+com\spring\maven\dao\impl\IOnlineAppointmentDAO.class
+com\spring\maven\dao\OnlineAppointmentDAO.class
 com\spring\maven\controller\MedicineController.class
 com\spring\maven\dao\EmployeeDAO.class
 com\spring\maven\model\Department.class
 com\spring\maven\dao\impl\IMedicineDAO.class
 com\spring\maven\controller\DepartmentController.class
+com\spring\maven\controller\HomeStaffPage.class
 com\spring\maven\model\Doctor.class
 com\spring\maven\model\Laboratory.class

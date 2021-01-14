@@ -27,6 +27,7 @@
                     class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav text-primary ml-auto">
                         <li class="nav-item text-primary border rounded" role="presentation" data-bs-hover-animate="pulse" style="color: rgb(0,0,0);background-color: #32a852;margin-right: 5px;"><a class="nav-link active text-uppercase" href="/login" style="color: rgb(255,255,255);font-size: 20px;"><strong>Login</strong></a></li>
+                        <li class="nav-item text-primary border rounded" role="presentation" data-bs-hover-animate="pulse" style="color: rgb(0,0,0);background-color: #327ffa;margin-right: 5px;"><a class="nav-link active text-uppercase" href="/OnlineAppoint" style="color: rgb(255,255,255);font-size: 20px;"><strong>Appointment</strong></a></li>
                         <!--<li class="nav-item border rounded" role="presentation" data-bs-hover-animate="pulse" style="background-color: #32a852;"><a class="nav-link active text-white" href="#" style="font-size: 20px;color: rgba(255,255,255,0.9);"><strong>SIGN UP</strong></a></li>-->
                     </ul>
                 </div>

@@ -7,7 +7,7 @@
     </div>
 </div>
 <div class="login-clean" style="margin-top: 0px;background-color: rgb(255,255,255);">
-    <form class="shadow-lg" method="post">
+    <form action="/homestaffpage" class="shadow-lg" method="post">
 
 
         <div class="form-group">  <input class="form-control" type="number" name="nid" placeholder="NID"></div>

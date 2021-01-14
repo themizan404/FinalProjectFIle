@@ -41,4 +41,16 @@ public class IndexController {
         return new ModelAndView("commonlogin/stafflogin");
     }
 
+    @RequestMapping("/OnlineAppoint")
+    public ModelAndView onlineAppointment() {
+        return new ModelAndView("onlineAppointment/appointmentForm");
+
+    }
+
+    @RequestMapping("/homestaffpage")
+    public ModelAndView staffHomePage() {
+        return new ModelAndView("staff/homestaffpage");
+
+    }
+
 }
