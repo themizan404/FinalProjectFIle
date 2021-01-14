@@ -33,7 +33,7 @@
                         <div class="container-fluid">
                             <p style="color: rgb(66,87,241);font-size: 25px;margin-top: 10px;margin-bottom: 16px;margin-left: 120px;"><strong>Hospital Management And Information System</strong></p>
                             <ul class="nav navbar-nav flex-nowrap ml-auto">
-                                <li class="nav-item dropdown no-arrow" role="presentation"><a class="nav-link" href="#"><button class="btn btn-primary" type="button">Logout</button></a></li>
+                                <li class="nav-item dropdown no-arrow" role="presentation"><a class="nav-link" href="/info"><button class="btn btn-primary" type="button">Logout</button></a></li>
                             </ul>
                         </div>
                     </nav>

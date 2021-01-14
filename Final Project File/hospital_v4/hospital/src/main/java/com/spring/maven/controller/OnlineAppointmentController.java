@@ -8,7 +8,9 @@ package com.spring.maven.controller;
 import com.spring.maven.controller.impl.IOnlineAppointmentController;
 import com.spring.maven.model.OnlineAppointment;
 import com.spring.maven.service.impl.IOnlineAppointmentService;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -57,7 +59,18 @@ public class OnlineAppointmentController implements IOnlineAppointmentController
 
     @Override
     public List<OnlineAppointment> getAll() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        List<OnlineAppointment> onlineAppointments = onlineAppointmentService.getAll();
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("onlineAppointments", onlineAppointments);
+        return null;
+    }
+
+    @Override
+    public ModelAndView getAllAppointment() {
+        List<OnlineAppointment> onlineAppointments = onlineAppointmentService.getAll();
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("onlineAppointments", onlineAppointments);
+        return new ModelAndView("staff/onlineAppointmentForm", "map", map);
     }
 
     public OnlineAppointment getByNid(int patient_nid) {

@@ -6,9 +6,9 @@
     <form action="/onlineappointment/save" class="shadow-lg" method="post">
 
 
-        <div class="form-group">  <input class="form-control" type="text" name="patient_nid" placeholder="NID"></div>
-        <div class="form-group"><input class="form-control" type="text" name="patient_problem" placeholder="Problem"></div>
-        <div class="form-group"><input class="form-control" type="date" name="appointmentDate" placeholder="Appointment Date"></div>
+        <div class="form-group">  <input class="form-control" type="text" name="patientNid" placeholder="NID"></div>
+        <div class="form-group"><input class="form-control" type="text" name="patientProblem" placeholder="Problem"></div>
+        <div class="form-group"><input class="form-control" type="date" name="appointment_Date" ></div>
         <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Submit</button></div>
     </form>
 </div>

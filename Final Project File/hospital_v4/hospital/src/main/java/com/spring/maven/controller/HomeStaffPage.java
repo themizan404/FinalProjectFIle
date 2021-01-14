@@ -16,11 +16,11 @@ import org.springframework.web.servlet.ModelAndView;
 @RestController
 @RequestMapping(value = "staff")
 public class HomeStaffPage {
-
-    @RequestMapping("/dashboard")
-    public ModelAndView dashBoard() {
-        return new ModelAndView("/staff/homestaffpage");
-    }
+//
+//    @RequestMapping("/dashboard")
+//    public ModelAndView dashBoard() {
+//        return new ModelAndView("/staff/homestaffpage");
+//    }
 
     @RequestMapping("/appointmentform")
     public ModelAndView appointmentform() {

@@ -2,23 +2,22 @@
 <div id="wrapper">
     <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bgm" >
         <div class="container-fluid d-flex flex-column p-0">
-            <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="">
-                <!--<div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-laugh-wink"></i></div>-->
-                <div class="sidebar-brand-text mx-3"><span>Admin</span></div>
-            </a>
-            <hr class="sidebar-divider my-0">
-            <ul class="nav navbar-nav text-light" id="accordionSidebar">
 
-                <li class="nav-item" role="presentation"><a class="nav-link " href="patientpage"><i class="fa fa-database"></i><span style="color: rgb(0,21,211);">Patient Management</span></a></li>
+            <div class="container d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="dashboard" style="width: 55px;height: 60px;"><img src="/resources/vendor/css/assets/img/loader.gif" style="margin-top: 10px;color: rgb(159,86,86);width: 55px;filter: invert(0%);"></a>
+                <hr class="sidebar-divider my-0">
+                <!--<div class="container d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="dashboard" style="width: 55px;height: 60px;"><img src="/resources/vendor/css/assets/img/loader.gif" style="margin-top: 10px;color: rgb(159,86,86);width: 55px;filter: invert(0%);"></a>-->
+                <ul class="nav navbar-nav text-light" id="accordionSidebar">
 
-                <li class="nav-item" role="presentation"><a class="nav-link active" href="hospitalpage"><i class="fas fa fa-money"></i><span>Hospital Management</span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link " href="patientpage"><i class="fa fa-database"></i><span style="color: rgb(0,21,211);">Patient Management</span></a></li>
 
-                <li class="nav-item" role="presentation"><a class="nav-link " href="adminpage"><i class="fas fa-house-leave"></i><span>Admin Management</span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="hospitalpage"><i class="fas fa fa-money"></i><span style="color: rgb(0,21,211);">Hospital Management</span></a></li>
+
+                    <li class="nav-item" role="presentation"><a class="nav-link " href="adminpage"><i class="fas fa-house-leave"></i><span style="color: rgb(0,21,211);">Admin Management</span></a></li>
 
 
-            </ul>
-            <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
-        </div>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
     </nav>
     <div class="d-flex flex-column" id="content-wrapper">
         <div id="content">

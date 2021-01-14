@@ -25,10 +25,15 @@ public class OnlineAppointmentService implements IOnlineAppointmentService {
 
     @Override
     public OnlineAppointment save(HttpServletRequest request) {
+        int patient_nid = Integer.parseInt(request.getParameter("patientNid"));
+        String patient_problem = request.getParameter("patientProblem");
+        String appiontmentDate = request.getParameter("appointment_Date");
+
         OnlineAppointment onlineAppointment = new OnlineAppointment();
-        onlineAppointment.setPatient_nid(Integer.parseInt(request.getParameter("patient_nid")));
-        onlineAppointment.setPatient_problem(request.getParameter("patient_problem"));
-        onlineAppointment.setAppointmentDate(request.getParameter("appiontmentDate"));
+
+        onlineAppointment.setPatient_nid(patient_nid);
+        onlineAppointment.setPatient_problem(patient_problem);
+        onlineAppointment.setAppointmentDate(appiontmentDate);
         return onlineAppointmentDAO.save(onlineAppointment);
     }
 

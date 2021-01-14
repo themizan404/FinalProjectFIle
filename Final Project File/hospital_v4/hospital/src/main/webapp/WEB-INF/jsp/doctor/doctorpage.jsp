@@ -98,9 +98,15 @@
 
                                                                     <select class="form-control"  name="doctor_specialist" >
                                                                         <optgroup label="Select A Specialist">
-                                                                            <option value="12">This is item 1</option>
-                                                                            <option value="13">This is item 2</option>
-                                                                            <option value="14">This is item 3</option>
+                                                                            <option value="Cardiologists">Cardiologists</option>
+                                                                            <option value="Dermatologists">Dermatologists</option>
+                                                                            <option value="Gastroenterologists">Gastroenterologists</option>
+                                                                            <option value="Hematologists">Hematologists</option>
+
+                                                                            <option value="Nephrologists">Nephrologists</option>
+                                                                            <option value="Neurologists">Neurologists</option>
+                                                                            <option value="Oncologists">Oncologists</option>
+                                                                            <option value="Hematologists">Hematologists</option>
                                                                         </optgroup>
                                                                     </select>
                                                                 </div>
@@ -108,9 +114,13 @@
 
                                                                     <select class="form-control" name="doctor_designation">
                                                                         <optgroup label="Select A Designation">
-                                                                            <option value="12">This is item 1</option>
-                                                                            <option value="13">This is item 2</option>
-                                                                            <option value="14">This is item 3</option>
+                                                                            <option value="Assistant Professor">Assistant Professor.</option>
+                                                                            <option value="Senior Assistant Professor">Senior Assistant Professor</option>
+                                                                            <option value="Associate Professor ">Associate Professor </option>
+                                                                            <option value="Senior Associate professor">Senior Associate professor</option>
+                                                                            <option value="Professor">Professor</option>
+
+
                                                                         </optgroup>
                                                                     </select>
                                                                 </div>
@@ -118,9 +128,15 @@
 
                                                                     <select class="form-control" name="doctor_department">
                                                                         <optgroup label="Select A Doctor Department">
-                                                                            <option value="12" >This is item 1</option>
-                                                                            <option value="13">This is item 2</option>
-                                                                            <option value="14">This is item 3</option>
+                                                                            <option value="Cardiology" >Cardiology</option>
+                                                                            <option value="Diagnostic imaging" >Diagnostic imaging</option>
+                                                                            <option value="Discharge lounge" >Discharge lounge</option>
+                                                                            <option value="Ear nose and throat" >Ear nose and throat</option>
+                                                                            <option value="General surgery" >General surgery</option>
+                                                                            <option value="Gynaecology" >Gynaecology</option>
+                                                                            <option value="Haematology" >Haematology</option>
+                                                                            <option value="Nephrology" >Nephrology</option>
+
                                                                         </optgroup>
                                                                     </select>
                                                                 </div>

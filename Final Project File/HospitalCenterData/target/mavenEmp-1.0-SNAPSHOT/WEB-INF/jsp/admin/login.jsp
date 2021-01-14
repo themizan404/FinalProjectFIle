@@ -11,10 +11,8 @@
         </div>
     </div>
 </div>
-<div class="login-clean" style="margin-top: 0px;background-color: rgb(255,255,255);">
+<div class="login-clean justify-content-center" style="margin-top: 0px;background-color: rgb(255,255,255);">
     <form class="shadow-lg" action="dashboard" method="post">
-
-
         <div class="form-group"><input class="form-control" type="number" name="nid" placeholder="NID"></div>
         <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name"></div>
         <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>

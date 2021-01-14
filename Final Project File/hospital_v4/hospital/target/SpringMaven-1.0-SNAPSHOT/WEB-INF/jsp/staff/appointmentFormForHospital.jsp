@@ -48,11 +48,64 @@
                                     <div class="form-row p-0 m-0">
                                         <div class="col-lg-6 col-xl-6 p-0 m-0 p-3">
                                             <!--<div class="form-group"><input class="form-control" type="number" placeholder="Admin Id" name="adminid"  nullable = true></div>-->
-                                            <div class="form-group"><input class="form-control" type="text" placeholder="Patient NID" name="patinet_nid"/></div>
-                                            <div class="form-group"><input class="form-control" type="text" placeholder="Patient Name" name="patinet_name"/></div>
-                                            <div class="form-group"><input class="form-control" type="text" placeholder="Patient Role" name="patinet_gender"/></div>
-                                            <div class="form-group"><input class="form-control" type="text" placeholder="Patient Password" name="patinet_age"/></div>
-                                            <div class="form-group"><input class="form-control" type="text" placeholder="Hospital Number" name="patient_address"/></div>
+                                            <div class="form-group">
+                                                <label>
+                                                    <strong>
+
+                                                        Patient NID
+                                                    </strong>
+                                                </label>
+                                                <input class="form-control" type="text" id="patinet_nid" name="patinet_nid" style="font-size: 30px"/></div>
+                                            <div class="form-group">
+                                                <label>
+                                                    <strong>
+
+                                                        Patient Name
+                                                    </strong>
+                                                </label><input class="form-control" type="text" value=""  name="patient_name"  id="patient_name" disabled/></div>
+                                            <div class="form-group">
+                                                <label>
+                                                    <strong>
+
+                                                        Patient Gender
+                                                    </strong>
+                                                </label><input class="form-control" type="text"  name="patient_gender" id="patient_gender" disabled/></div>
+                                            <div class="form-group">
+                                                <label>
+                                                    <strong>
+
+                                                        Patient Age
+                                                    </strong>
+                                                </label><input class="form-control" type="text"  name="patient_age" id="patient_age" disabled/></div>
+                                            <div class="form-group">
+                                                <label>
+                                                    <strong>
+
+                                                        Patient Address
+                                                    </strong>
+                                                </label><input class="form-control" type="text"  name="patient_address" id="patient_address" disabled/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>
+                                                    <strong>
+
+                                                        Patient Problem
+                                                    </strong>
+                                                </label>
+                                                <select class="form-control" name="doctor_department" >
+                                                    <optgroup label="Select A Department">
+                                                        <option value="Cardiology" >Cardiology</option>
+                                                        <option value="Diagnostic imaging" >Diagnostic imaging</option>
+                                                        <option value="Discharge lounge" >Discharge lounge</option>
+                                                        <option value="Ear nose and throat" >Ear nose and throat</option>
+                                                        <option value="General surgery" >General surgery</option>
+                                                        <option value="Gynaecology" >Gynaecology</option>
+                                                        <option value="Haematology" >Haematology</option>
+                                                        <option value="Nephrology" >Nephrology</option>
+
+                                                    </optgroup>
+                                                </select>
+                                            </div>
 
 
 
@@ -60,7 +113,11 @@
                                             <!--                                            <div class="form-group"><input class="form-control" type="text" placeholder="Hospital Name" name="hospital_name"/></div>
                                                                                         <div class="form-group"><input class="form-control" type="text" placeholder="Hospital type" name="hospital_type"/></div>
                                                                                         <div class="form-group"><input class="form-control" type="text" placeholder="Hospital Location" name="hospital_location"/></div>-->
-                                            <input type="submit" value="Save"/>
+                                            <div class="d-flex justify-content-center">
+
+                                                <input class="mr-5 btn btn-primary" type="button" value="Search" id="btnSearch"/> 
+                                                <input class="mr-3 btn btn-success" type="submit" value="Save"/> 
+                                            </div>
                                             <!-- <div class="col p-0 m-0 p-3 d-flex justify-content-end"><button class="btn btn-primary btn-block" type="submit">Submit</button></div> -->
                                         </div>
                                     </div>
@@ -290,3 +347,17 @@
 
 
 <jsp:include page="/WEB-INF/jsp/common/home/footer.jsp" />
+
+
+<script>
+
+    $("#btnSearch").click(function () {
+        $.get("http://localhost:8080/info/getPatientByNid/" + $("#patinet_nid").val(), function (data, status) {
+            console.log(data);
+            $("#patient_name").val(data.patient_name);
+            $("#patient_gender").val(data.patient_gender);
+            $("#patient_age").val(data.patient_age);
+            $("#patient_address").val(data.patient_address);
+        });
+    });
+</script>

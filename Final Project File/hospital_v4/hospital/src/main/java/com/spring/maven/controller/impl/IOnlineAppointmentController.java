@@ -7,6 +7,7 @@ package com.spring.maven.controller.impl;
 
 import com.spring.maven.common.ICommonController;
 import com.spring.maven.model.OnlineAppointment;
+import org.springframework.web.servlet.ModelAndView;
 
 /**
  *
@@ -14,4 +15,5 @@ import com.spring.maven.model.OnlineAppointment;
  */
 public interface IOnlineAppointmentController extends ICommonController<OnlineAppointment> {
 
+    public ModelAndView getAllAppointment();
 }

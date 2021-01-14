@@ -47,7 +47,7 @@ public class IndexController {
 
     }
 
-    @RequestMapping("/homestaffpage")
+    @RequestMapping("/staff/dashboard")
     public ModelAndView staffHomePage() {
         return new ModelAndView("staff/homestaffpage");
 
