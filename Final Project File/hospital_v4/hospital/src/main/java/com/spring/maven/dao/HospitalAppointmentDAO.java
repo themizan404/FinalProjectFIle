@@ -39,17 +39,30 @@ public class HospitalAppointmentDAO implements IHospitalAppointmentDAO {
 
     @Override
     public HospitalAppointment delete(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        HospitalAppointment hospitalAppointment = (HospitalAppointment) sessionFactory.getCurrentSession().load(HospitalAppointment.class, id);
+        sessionFactory.getCurrentSession().flush();
+        return hospitalAppointment;
     }
 
     @Override
     public List<HospitalAppointment> getAll() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        List<HospitalAppointment> hospitalAppointments = sessionFactory.getCurrentSession().createCriteria(HospitalAppointment.class).list();
+        sessionFactory.getCurrentSession().flush();
+        return hospitalAppointments;
     }
 
     @Override
     public HospitalAppointment getById(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        HospitalAppointment appointment = (HospitalAppointment) sessionFactory.getCurrentSession().get(HospitalAppointment.class, id);
+        sessionFactory.getCurrentSession().flush();
+        return appointment;
+    }
+
+    @Override
+    public HospitalAppointment getByNid(int patient_nid) {
+        HospitalAppointment appointment = (HospitalAppointment) sessionFactory.getCurrentSession().get(HospitalAppointment.class, patient_nid);
+        sessionFactory.getCurrentSession().flush();
+        return appointment;
     }
 
 }

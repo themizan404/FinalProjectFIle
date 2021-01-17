@@ -1,0 +1,16 @@
+CREATE TABLE  `hospitaldata`.`doctor` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `doctor_nid` int(10) unsigned NOT NULL,
+  `doctor_name` varchar(45) NOT NULL,
+  `doctor_degree` varchar(45) NOT NULL,
+  `doctor_specialist` varchar(45) NOT NULL,
+  `doctor_designation` varchar(45) NOT NULL,
+  `doctor_department` varchar(45) NOT NULL,
+  `doctor_registerId` varchar(45) NOT NULL,
+  `doctor_password` varchar(45) NOT NULL,
+  `hospital_number` varchar(45) NOT NULL,
+  `hospital_name` varchar(45) NOT NULL,
+  `hospital_type` varchar(45) NOT NULL,
+  `hospital_location` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;

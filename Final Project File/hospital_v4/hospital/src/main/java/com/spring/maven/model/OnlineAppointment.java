@@ -25,7 +25,7 @@ public class OnlineAppointment {
     private int patient_nid;
     private String patient_problem;
     private String contact_number;
-    private String AppointmentDate;
+    private String appointmentDate;
 
     public int getId() {
         return id;
@@ -60,11 +60,11 @@ public class OnlineAppointment {
     }
 
     public String getAppointmentDate() {
-        return AppointmentDate;
+        return appointmentDate;
     }
 
-    public void setAppointmentDate(String AppointmentDate) {
-        this.AppointmentDate = AppointmentDate;
+    public void setAppointmentDate(String appointmentDate) {
+        this.appointmentDate = appointmentDate;
     }
 
 }

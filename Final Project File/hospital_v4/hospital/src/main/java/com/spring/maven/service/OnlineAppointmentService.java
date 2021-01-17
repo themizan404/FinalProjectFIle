@@ -19,53 +19,53 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class OnlineAppointmentService implements IOnlineAppointmentService {
-    
+
     @Autowired
     IOnlineAppointmentDAO onlineAppointmentDAO;
-    
+
     @Override
     public OnlineAppointment save(HttpServletRequest request) {
         int patient_nid = Integer.parseInt(request.getParameter("patient_nid"));
         String patient_problem = request.getParameter("patientProblem");
         String contact_number = request.getParameter("contact_number");
         String appiontmentDate = request.getParameter("appointment_Date");
-        
+
         OnlineAppointment onlineAppointment = new OnlineAppointment();
-        
+
         onlineAppointment.setPatient_nid(patient_nid);
         onlineAppointment.setPatient_problem(patient_problem);
         onlineAppointment.setContact_number(contact_number);
         onlineAppointment.setAppointmentDate(appiontmentDate);
         return onlineAppointmentDAO.save(onlineAppointment);
     }
-    
+
     @Override
     public OnlineAppointment update(HttpServletRequest request) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
 
     }
-    
+
     @Override
-    
+
     public OnlineAppointment delete(int id) {
         return onlineAppointmentDAO.delete(id);
     }
-    
+
     @Override
     public List<OnlineAppointment> getAll() {
-        
+
         return onlineAppointmentDAO.getAll();
-        
+
     }
-    
+
     @Override
     public OnlineAppointment getById(int id) {
         return onlineAppointmentDAO.getById(id);
     }
-    
+
     @Override
     public OnlineAppointment getByNid(int patient_nid) {
         return onlineAppointmentDAO.getByNid(patient_nid);
     }
-    
+
 }

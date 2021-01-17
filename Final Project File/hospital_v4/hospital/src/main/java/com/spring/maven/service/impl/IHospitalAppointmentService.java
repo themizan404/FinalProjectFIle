@@ -14,4 +14,5 @@ import com.spring.maven.model.HospitalAppointment;
  */
 public interface IHospitalAppointmentService extends ICommonService<HospitalAppointment> {
 
+    public HospitalAppointment getByNid(int patient_nid);
 }

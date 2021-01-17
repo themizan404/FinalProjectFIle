@@ -13,5 +13,6 @@ import com.spring.maven.model.HospitalAppointment;
  * @author mohdm
  */
 public interface IHospitalAppointmentDAO extends ICommonDAO<HospitalAppointment> {
-    
+
+    public HospitalAppointment getByNid(int patient_nid);
 }

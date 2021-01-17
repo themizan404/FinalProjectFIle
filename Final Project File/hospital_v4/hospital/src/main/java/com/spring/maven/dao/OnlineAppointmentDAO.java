@@ -48,6 +48,7 @@ public class OnlineAppointmentDAO implements IOnlineAppointmentDAO {
     @Override
     public List<OnlineAppointment> getAll() {
         List<OnlineAppointment> appointments = sessionFactory.getCurrentSession().createCriteria(OnlineAppointment.class).list();
+
         sessionFactory.getCurrentSession().flush();
         return appointments;
     }

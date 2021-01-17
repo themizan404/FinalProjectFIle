@@ -50,17 +50,23 @@ public class HospitalAppointmentService implements IHospitalAppointmentService {
 
     @Override
     public HospitalAppointment delete(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return hospitalAppointmentDAO.delete(id);
     }
 
     @Override
     public List<HospitalAppointment> getAll() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return hospitalAppointmentDAO.getAll();
     }
 
     @Override
     public HospitalAppointment getById(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return hospitalAppointmentDAO.getById(id);
+
+    }
+
+    @Override
+    public HospitalAppointment getByNid(int patient_nid) {
+        return hospitalAppointmentDAO.getByNid(patient_nid);
     }
 
 }

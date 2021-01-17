@@ -1,0 +1,8 @@
+
+CREATE TABLE  `centerhospitaldata`.`admin` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `admin_nid` int(11) NOT NULL,
+  `admin_name` varchar(45) NOT NULL,
+  `admin_password` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;

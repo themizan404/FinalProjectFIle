@@ -7,11 +7,13 @@ package com.spring.maven.controller.impl;
 
 import com.spring.maven.common.ICommonController;
 import com.spring.maven.model.HospitalAppointment;
+import org.springframework.web.servlet.ModelAndView;
 
 /**
  *
  * @author mohdm
  */
 public interface IHospitalAppointmentController extends ICommonController<HospitalAppointment> {
-    
+
+    public ModelAndView getAllHospitalAppointment();
 }

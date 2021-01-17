@@ -1,0 +1,7 @@
+
+CREATE TABLE  `hospitaldata`.`medicine` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `medicine_name` varchar(45) NOT NULL,
+  `generic_group` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;

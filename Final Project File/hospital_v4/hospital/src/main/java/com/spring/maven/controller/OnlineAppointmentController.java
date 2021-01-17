@@ -64,7 +64,7 @@ public class OnlineAppointmentController implements IOnlineAppointmentController
     }
 
     @Override
-    @RequestMapping(value = "/onlineappointmentform")
+    @RequestMapping(value = "/list")
     public ModelAndView getAllAppointment() {
 
         List<OnlineAppointment> onlineAppointments = onlineAppointmentService.getAll();
