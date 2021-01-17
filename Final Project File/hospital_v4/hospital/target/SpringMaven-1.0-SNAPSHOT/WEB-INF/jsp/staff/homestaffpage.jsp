@@ -69,15 +69,15 @@
                                                         <div class="form-row p-0 m-0">
                                                             <div class="col-lg-6 col-xl-6 p-0 m-0 p-3">
                                                                 <!--<div class="form-group"><input class="form-control" type="number" placeholder="Admin Id" name="adminid"  nullable = true></div>-->
-                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Admin NID" name="admin_nid"/></div>
-                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Admin Name" name="admin_name"/></div>
-                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Admin Role" name="admin_role"/></div>
-                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Admin Password" name="admin_password"/></div>
-                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Hospital Number" name="hospital_number"/></div>
-                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Hospital Name" name="hospital_name"/></div>
-                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Hospital type" name="hospital_type"/></div>
-                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Hospital Location" name="hospital_location"/></div>
-                                                                <input type="submit" value="Save"/>
+                                                                <!--                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Admin NID" name="admin_nid"/></div>
+                                                                                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Admin Name" name="admin_name"/></div>
+                                                                                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Admin Role" name="admin_role"/></div>
+                                                                                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Admin Password" name="admin_password"/></div>
+                                                                                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Hospital Number" name="hospital_number"/></div>
+                                                                                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Hospital Name" name="hospital_name"/></div>
+                                                                                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Hospital type" name="hospital_type"/></div>
+                                                                                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Hospital Location" name="hospital_location"/></div>
+                                                                                                                                <input type="submit" value="Save"/>-->
                                                                 <!-- <div class="col p-0 m-0 p-3 d-flex justify-content-end"><button class="btn btn-primary btn-block" type="submit">Submit</button></div> -->
                                                             </div>
                                                         </div>

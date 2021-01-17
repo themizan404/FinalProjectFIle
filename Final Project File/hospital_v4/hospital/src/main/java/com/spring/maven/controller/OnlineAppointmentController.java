@@ -30,6 +30,7 @@ public class OnlineAppointmentController implements IOnlineAppointmentController
     IOnlineAppointmentService onlineAppointmentService;
 
     @Override
+    @RequestMapping("/create")
     public ModelAndView create() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
@@ -38,7 +39,7 @@ public class OnlineAppointmentController implements IOnlineAppointmentController
     @RequestMapping(value = "/save", method = RequestMethod.POST)
     public ModelAndView save(HttpServletRequest request) {
         onlineAppointmentService.save(request);
-        return new ModelAndView("onlineAppointment/appointmentForm");
+        return new ModelAndView("redirect:/onlineappoint");
 
     }
 
@@ -59,14 +60,13 @@ public class OnlineAppointmentController implements IOnlineAppointmentController
 
     @Override
     public List<OnlineAppointment> getAll() {
-        List<OnlineAppointment> onlineAppointments = onlineAppointmentService.getAll();
-        Map<String, Object> map = new HashMap<String, Object>();
-        map.put("onlineAppointments", onlineAppointments);
         return null;
     }
 
     @Override
+    @RequestMapping(value = "/onlineappointmentform")
     public ModelAndView getAllAppointment() {
+
         List<OnlineAppointment> onlineAppointments = onlineAppointmentService.getAll();
         Map<String, Object> map = new HashMap<String, Object>();
         map.put("onlineAppointments", onlineAppointments);

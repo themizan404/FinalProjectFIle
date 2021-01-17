@@ -44,7 +44,7 @@
                         <div class="col-xl-12 mb-4 mb-xl-0">
                             <!-- Section: Live preview -->
                             <section>
-                                <form action="/admin/save" method="post">
+                                <form action="/hospitalappointment/save" method="post">
                                     <div class="form-row p-0 m-0">
                                         <div class="col-lg-6 col-xl-6 p-0 m-0 p-3">
                                             <!--<div class="form-group"><input class="form-control" type="number" placeholder="Admin Id" name="adminid"  nullable = true></div>-->
@@ -55,35 +55,35 @@
                                                         Patient NID
                                                     </strong>
                                                 </label>
-                                                <input class="form-control" type="text" id="patinet_nid" name="patinet_nid" style="font-size: 30px"/></div>
+                                                <input class="form-control" type="text" id="patient_nid" name="patient_nid" style="font-size: 30px"/></div>
                                             <div class="form-group">
                                                 <label>
                                                     <strong>
 
                                                         Patient Name
                                                     </strong>
-                                                </label><input class="form-control" type="text" value=""  name="patient_name"  id="patient_name" disabled/></div>
+                                                </label><input class="form-control" type="text" value=""  name="patient_name"  id="patient_name" /></div>
                                             <div class="form-group">
                                                 <label>
                                                     <strong>
 
                                                         Patient Gender
                                                     </strong>
-                                                </label><input class="form-control" type="text"  name="patient_gender" id="patient_gender" disabled/></div>
+                                                </label><input class="form-control" type="text"  name="patient_gender" id="patient_gender" /></div>
                                             <div class="form-group">
                                                 <label>
                                                     <strong>
 
                                                         Patient Age
                                                     </strong>
-                                                </label><input class="form-control" type="text"  name="patient_age" id="patient_age" disabled/></div>
+                                                </label><input class="form-control" type="text"  name="patient_age" id="patient_age" /></div>
                                             <div class="form-group">
                                                 <label>
                                                     <strong>
 
                                                         Patient Address
                                                     </strong>
-                                                </label><input class="form-control" type="text"  name="patient_address" id="patient_address" disabled/>
+                                                </label><input class="form-control" type="text"  name="patientAddress" id="patient_address" />
                                             </div>
                                             <div class="form-group">
                                                 <label>
@@ -92,7 +92,7 @@
                                                         Patient Problem
                                                     </strong>
                                                 </label>
-                                                <select class="form-control" name="doctor_department" >
+                                                <select class="form-control" name="patient_problem" >
                                                     <optgroup label="Select A Department">
                                                         <option value="Cardiology" >Cardiology</option>
                                                         <option value="Diagnostic imaging" >Diagnostic imaging</option>
@@ -352,8 +352,8 @@
 <script>
 
     $("#btnSearch").click(function () {
-        $.get("http://localhost:8080/info/getPatientByNid/" + $("#patinet_nid").val(), function (data, status) {
-            console.log(data);
+        $.get("http://localhost:8080/info/getPatientByNid/" + $("#patient_nid").val(), function (data, status) {
+//            console.log(data);
             $("#patient_name").val(data.patient_name);
             $("#patient_gender").val(data.patient_gender);
             $("#patient_age").val(data.patient_age);

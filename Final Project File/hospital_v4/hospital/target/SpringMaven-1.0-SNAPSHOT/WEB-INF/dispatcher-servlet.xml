@@ -55,6 +55,7 @@
                 <value>com.spring.maven.model.Staff</value>
                 <value>com.spring.maven.model.Doctor</value>
                 <value>com.spring.maven.model.OnlineAppointment</value>
+                <value>com.spring.maven.model.HospitalAppointment</value>
                 
             </list>
         </property>

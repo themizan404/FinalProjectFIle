@@ -16,5 +16,4 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "doctor")
 public class DoctorPage {
 
-    
 }

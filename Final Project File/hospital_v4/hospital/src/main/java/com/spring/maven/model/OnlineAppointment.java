@@ -7,7 +7,10 @@ package com.spring.maven.model;
 
 import java.util.Date;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import org.hibernate.annotations.GeneratorType;
 
 /**
  *
@@ -17,9 +20,11 @@ import javax.persistence.Id;
 public class OnlineAppointment {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private int patient_nid;
     private String patient_problem;
+    private String contact_number;
     private String AppointmentDate;
 
     public int getId() {
@@ -44,6 +49,14 @@ public class OnlineAppointment {
 
     public void setPatient_problem(String patient_problem) {
         this.patient_problem = patient_problem;
+    }
+
+    public String getContact_number() {
+        return contact_number;
+    }
+
+    public void setContact_number(String contact_number) {
+        this.contact_number = contact_number;
     }
 
     public String getAppointmentDate() {

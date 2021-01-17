@@ -52,19 +52,21 @@
                                         <a class="nav-link" id="home-tab" data-toggle="tab" href="#insert" role="tab" aria-controls="home" aria-selected="false">Insert Patient Data</a>
                                     </li>
                                     <li class="nav-item waves-effect waves-light">
-                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#update" role="tab" aria-controls="profile" aria-selected="false">Update Patient Data</a>
+                                        <a class="nav-link" id="profile-tab" href="/info/admin/viewPatient" role="tab" aria-controls="profile" aria-selected="false">Update Patient Data</a>
                                     </li>
-                                    <li class="nav-item waves-effect waves-light">
-                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#view" role="tab" aria-controls="profile" aria-selected="false">View Patient Data</a>
-                                    </li>
-                                    <li class="nav-item waves-effect waves-light">
-                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#delete" role="tab" aria-controls="profile" aria-selected="false">Delete Patient Data</a>
-                                    </li>
+                                    <!--                                    <li class="nav-item waves-effect waves-light">
+                                                                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#view" role="tab" aria-controls="profile" aria-selected="false">View Admin Data</a>
+                                                                        </li>
+                                                                        <li class="nav-item waves-effect waves-light">
+                                                                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#delete" role="tab" aria-controls="profile" aria-selected="false">Delete Admin Data</a>
+                                                                        </li>-->
                                 </ul>
                                 <div class="tab-content" id="myTabContent">
-                                    <!-- Insert Section-->
+                                    <!-- Insert Section------------------------------------------------------------------------------------------------------->
                                     <div class="tab-pane fade" id="insert" role="tabpanel" aria-labelledby="home-tab">
                                         <section>
+
+
                                             <div class="container-fluid">
                                                 <div class="container mt-5">
                                                     <div><h4 class="p-0 m-0 pb-3 d-flex justify-content-center">Insert Patient Details</h4></div>
@@ -89,157 +91,12 @@
                                                     </form>
                                                 </div>
                                             </div>
-                                        </section>
-                                    </div>
-                                    <!--Update Section  -------------------------------------------------------------------------------------------------------- -->
-                                    <div class="tab-pane fade" id="update" role="tabpanel" aria-labelledby="home-tab">
-                                        <section>
-                                            <div class="container-fluid">
-                                                <div class="container mt-5">
-                                                    <div><h4 class="p-0 m-0 pb-3 d-flex justify-content-center">Update Patient Details</h4></div>
-                                                    <form >
-                                                        <div class="form-row p-0 m-0">
-                                                            <div class="col-lg-6 col-xl-6 p-0 m-0 p-3">
-                                                                <!--<div class="form-group"><input class="form-control" type="number" placeholder="Admin Id" name="adminId"></div>-->
-                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Patient NID" name="patient_nid"></div>
-                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Patient Name" name="patient_name"></div>
-                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Patient Gender" name="patient_gender"></div>
-                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Patient Age" name="patient_age"></div>
-                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Patient Address" name="patient_address"></div>
-                                                                <input type="submit" value="Save"/>
-                                                            </div>
 
 
 
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </section>
-                                    </div>
-                                    <!-- View Section ------------------------------------------------------------------------------------------------------>
-                                    <div class="tab-pane fade" id="view" role="tabpanel" aria-labelledby="profile-tab">
-                                        <section>
-                                            <div class="container-fluid">
-                                                <div class="container mt-5">
-
-                                                    <div><h4 class="p-0 m-0 pb-3 d-flex justify-content-center">List Of Admin Details</h4></div>
-
-                                                    <table class="table">
-                                                        <thead>
-                                                            <tr>
-                                                                <th scope="col">Patient ID</th>
-                                                                <th scope="col">Patient NID</th>
-                                                                <th scope="col">Patient Name</th>
-                                                                <th scope="col">Patient Gender</th>
-                                                                <th scope="col">Patient Age</th>
-                                                                <th scope="col">Patient Address</th>
-
-
-
-
-
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr >
-                                                                <td>
-
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-
-                                                    </table>
-
-
-
-                                                </div>
-                                            </div>
                                         </section>
                                     </div>
 
-
-
-
-
-
-
-
-                                    <!--Delete Section---------------------------------------------------------------------------------------------------->
-
-                                    <div class="tab-pane fade" id="delete" role="tabpanel" aria-labelledby="profile-tab">
-                                        <section>
-
-
-
-                                            <div class="container-fluid">
-                                                <div class="container mt-5">
-                                                    <div ><h4 class="p-0 m-0 pb-3 d-flex justify-content-center">Delete Admin Details</h4></div>
-
-                                                    <form class="form-inline d-none d-sm-inline-block mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                                                        <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
-                                                            <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
-                                                        </div>
-                                                    </form>
-
-
-                                                    <form >
-                                                        <div class="form-row p-0 m-0">
-
-                                                            <div class="col-lg-6 col-xl-6 p-0 m-0 p-3" id="formPersonal">
-
-                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Name"></div>
-                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Apellidos"></div>
-                                                                <div class="form-group"><input class="form-control" type="email" required="" placeholder="Correo electrónico"></div>
-                                                                <div class="form-group"><input class="form-control" type="tel" placeholder="Celular / Teléfono"></div>
-                                                                <!-- <div class="form-group"><input class="form-control" type="tel" required="" placeholder="LinkedIn"></div> -->
-                                                            </div>
-                                                            <div class="col-lg-6 col-xl-6 p-0 m-0 p-3" id="formPersonal">
-
-                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Name"></div>
-
-                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Apellidos"></div>
-                                                                <div class="form-group"><input class="form-control" type="email" required="" placeholder="Correo electrónico"></div>
-                                                                <div class="form-group"><input class="form-control" type="tel" placeholder="Celular / Teléfono"></div>
-                                                                <!-- <div class="form-group"><input class="form-control" type="tel" required="" placeholder="LinkedIn"></div> -->
-                                                            </div>
-                                                            <div class="col-lg-6 col-xl-6 p-0 m-0 p-3" id="formPersonal">
-
-                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Name"></div>
-                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Apellidos"></div>
-                                                                <!-- <div class="form-group"><input class="form-control" type="email" required="" placeholder="Correo electrónico"></div> -->
-                                                                <!-- <div class="form-group"><input class="form-control" type="tel" placeholder="Celular / Teléfono"></div> -->
-                                                                <!-- <div class="form-group"><input class="form-control" type="tel" required="" placeholder="LinkedIn"></div> -->
-                                                            </div>
-                                                            <div class="col-lg-6 col-xl-6 p-0 m-0 p-3" id="formPersonal">
-
-                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Name"></div>
-                                                                <div class="form-group"><input class="form-control" type="text" placeholder="Apellidos"></div>
-                                                                <!-- <div class="form-group"><input class="form-control" type="email" required="" placeholder="Correo electrónico"></div>
-                                                                <div class="form-group"><input class="form-control" type="tel" placeholder="Celular / Teléfono"></div>
-                                                                <div class="form-group"><input class="form-control" type="tel" required="" placeholder="LinkedIn"></div> -->
-                                                            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-                                                            <div class="col p-0 m-0 p-3 d-flex justify-content-end"><button class="btn btn-primary btn-block" type="button">Delete</button></div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </section>
-
-
-                                    </div>
                                 </div>
 
                             </section>
@@ -261,7 +118,231 @@
                     </div>
 
                 </div>
-            </div>
+            </div> 
+            <!--            
+                        <div class="container-fluid">
+                            <div class="container my-4">
+                                <p class="font-weight-bold">Patient</p>
+                                <div class="row">
+                                     Grid column 
+                                    <div class="col-xl-12 mb-4 mb-xl-0">
+                                         Section: Live preview 
+                                        <section>
+                                            <ul class="nav nav-pills" id="myTab" role="tablist">
+                                                <li class="nav-item waves-effect waves-light">
+                                                    <a class="nav-link" id="home-tab" data-toggle="tab" href="#insert" role="tab" aria-controls="home" aria-selected="false">Insert Patient Data</a>
+                                                </li>
+                                                <li class="nav-item waves-effect waves-light">
+                                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#update" role="tab" aria-controls="profile" aria-selected="false">Update Patient Data</a>
+                                                </li>
+                                                <li class="nav-item waves-effect waves-light">
+                                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#view" role="tab" aria-controls="profile" aria-selected="false">View Patient Data</a>
+                                                </li>
+                                                <li class="nav-item waves-effect waves-light">
+                                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#delete" role="tab" aria-controls="profile" aria-selected="false">Delete Patient Data</a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content" id="myTabContent">
+                                                 Insert Section
+                                                <div class="tab-pane fade" id="insert" role="tabpanel" aria-labelledby="home-tab">
+                                                    <section>
+                                                        <div class="container-fluid">
+                                                            <div class="container mt-5">
+                                                                <div><h4 class="p-0 m-0 pb-3 d-flex justify-content-center">Insert Patient Details</h4></div>
+                                                                <form action="/info/patient/save" method="post">
+                                                                    <div class="form-row p-0 m-0">
+                                                                        <div class="col-lg-6 col-xl-6 p-0 m-0 p-3">
+                                                                            <div class="form-group"><input class="form-control" type="number" placeholder="Admin Id" name="adminid"  nullable = true></div>
+                                                                            <div class="form-group"><input class="form-control" type="text" placeholder="Patient NID" name="patient_nid"/></div>
+                                                                            <div class="form-group"><input class="form-control" type="text" placeholder="Patient Name" name="patient_name"/></div>
+                                                                            <div class="form-group"><input class="form-control" type="text" placeholder="Patient Gender" name="patient_gender"/></div>
+                                                                            <div class="form-group"><input class="form-control" type="text" placeholder="Patient Age" name="patient_age"/></div>
+                                                                            <div class="form-group"><input class="form-control" type="text" placeholder="Patient Address" name="patient_address"/></div>
+                                                                            <input type="submit" value="Save"/>
+            
+                                                                                                                                            <div class="form-group"><input class="form-control" type="password" placeholder="Admin Password" name="adminpassword"></div>
+                                                                                                                                            <div class="col p-0 m-0 p-3 d-flex justify-content-end"><button class="btn btn-primary btn-block" type="submit">Submit</button></div> 
+                                                                        </div>
+            
+            
+            
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                                Update Section  -------------------------------------------------------------------------------------------------------- 
+                                                <div class="tab-pane fade" id="update" role="tabpanel" aria-labelledby="home-tab">
+                                                    <section>
+                                                        <div class="container-fluid">
+                                                            <div class="container mt-5">
+                                                                <div><h4 class="p-0 m-0 pb-3 d-flex justify-content-center">Update Patient Details</h4></div>
+                                                                <form >
+                                                                    <div class="form-row p-0 m-0">
+                                                                        <div class="col-lg-6 col-xl-6 p-0 m-0 p-3">
+                                                                            <div class="form-group"><input class="form-control" type="number" placeholder="Admin Id" name="adminId"></div>
+                                                                            <div class="form-group"><input class="form-control" type="text" placeholder="Patient NID" name="patient_nid"></div>
+                                                                            <div class="form-group"><input class="form-control" type="text" placeholder="Patient Name" name="patient_name"></div>
+                                                                            <div class="form-group"><input class="form-control" type="text" placeholder="Patient Gender" name="patient_gender"></div>
+                                                                            <div class="form-group"><input class="form-control" type="text" placeholder="Patient Age" name="patient_age"></div>
+                                                                            <div class="form-group"><input class="form-control" type="text" placeholder="Patient Address" name="patient_address"></div>
+                                                                            <input type="submit" value="Save"/>
+                                                                        </div>
+            
+            
+            
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                                 View Section ----------------------------------------------------------------------------------------------------
+                                                <div class="tab-pane fade" id="view" role="tabpanel" aria-labelledby="profile-tab">
+                                                    <section>
+                                                        <div class="container-fluid">
+                                                            <div class="container mt-5">
+            
+                                                                <div><h4 class="p-0 m-0 pb-3 d-flex justify-content-center">List Of Admin Details</h4></div>
+            
+                                                                <table class="table">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th scope="col">Patient ID</th>
+                                                                            <th scope="col">Patient NID</th>
+                                                                            <th scope="col">Patient Name</th>
+                                                                            <th scope="col">Patient Gender</th>
+                                                                            <th scope="col">Patient Age</th>
+                                                                            <th scope="col">Patient Address</th>
+            
+            
+            
+            
+            
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr >
+                                                                            <td>
+            
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+            
+                                                                </table>
+            
+            
+            
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                </div>
+            
+            
+            
+            
+            
+            
+            
+            
+                                                Delete Section--------------------------------------------------------------------------------------------------
+            
+                                                <div class="tab-pane fade" id="delete" role="tabpanel" aria-labelledby="profile-tab">
+                                                    <section>
+            
+            
+            
+                                                        <div class="container-fluid">
+                                                            <div class="container mt-5">
+                                                                <div ><h4 class="p-0 m-0 pb-3 d-flex justify-content-center">Delete Admin Details</h4></div>
+            
+                                                                <form class="form-inline d-none d-sm-inline-block mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                                                                    <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
+                                                                        <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                                                                    </div>
+                                                                </form>
+            
+            
+                                                                <form >
+                                                                    <div class="form-row p-0 m-0">
+            
+                                                                        <div class="col-lg-6 col-xl-6 p-0 m-0 p-3" id="formPersonal">
+            
+                                                                            <div class="form-group"><input class="form-control" type="text" placeholder="Name"></div>
+                                                                            <div class="form-group"><input class="form-control" type="text" placeholder="Apellidos"></div>
+                                                                            <div class="form-group"><input class="form-control" type="email" required="" placeholder="Correo electrónico"></div>
+                                                                            <div class="form-group"><input class="form-control" type="tel" placeholder="Celular / Teléfono"></div>
+                                                                             <div class="form-group"><input class="form-control" type="tel" required="" placeholder="LinkedIn"></div> 
+                                                                        </div>
+                                                                        <div class="col-lg-6 col-xl-6 p-0 m-0 p-3" id="formPersonal">
+            
+                                                                            <div class="form-group"><input class="form-control" type="text" placeholder="Name"></div>
+            
+                                                                            <div class="form-group"><input class="form-control" type="text" placeholder="Apellidos"></div>
+                                                                            <div class="form-group"><input class="form-control" type="email" required="" placeholder="Correo electrónico"></div>
+                                                                            <div class="form-group"><input class="form-control" type="tel" placeholder="Celular / Teléfono"></div>
+                                                                             <div class="form-group"><input class="form-control" type="tel" required="" placeholder="LinkedIn"></div> 
+                                                                        </div>
+                                                                        <div class="col-lg-6 col-xl-6 p-0 m-0 p-3" id="formPersonal">
+            
+                                                                            <div class="form-group"><input class="form-control" type="text" placeholder="Name"></div>
+                                                                            <div class="form-group"><input class="form-control" type="text" placeholder="Apellidos"></div>
+                                                                             <div class="form-group"><input class="form-control" type="email" required="" placeholder="Correo electrónico"></div> 
+                                                                             <div class="form-group"><input class="form-control" type="tel" placeholder="Celular / Teléfono"></div> 
+                                                                             <div class="form-group"><input class="form-control" type="tel" required="" placeholder="LinkedIn"></div> 
+                                                                        </div>
+                                                                        <div class="col-lg-6 col-xl-6 p-0 m-0 p-3" id="formPersonal">
+            
+                                                                            <div class="form-group"><input class="form-control" type="text" placeholder="Name"></div>
+                                                                            <div class="form-group"><input class="form-control" type="text" placeholder="Apellidos"></div>
+                                                                             <div class="form-group"><input class="form-control" type="email" required="" placeholder="Correo electrónico"></div>
+                                                                            <div class="form-group"><input class="form-control" type="tel" placeholder="Celular / Teléfono"></div>
+                                                                            <div class="form-group"><input class="form-control" type="tel" required="" placeholder="LinkedIn"></div> 
+                                                                        </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                                                                        <div class="col p-0 m-0 p-3 d-flex justify-content-end"><button class="btn btn-primary btn-block" type="button">Delete</button></div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+            
+            
+                                                </div>
+                                            </div>
+            
+                                        </section>
+                                         Section: Live preview 
+            
+                                    </div>
+                                     Grid column 
+            
+                                     Grid column 
+                                    <div class="col-xl-6">
+            
+            
+            
+            
+            
+                                    </div>
+                                     Grid column 
+            
+                                </div>
+            
+                            </div>
+                        </div>-->
 
 
 

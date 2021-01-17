@@ -22,6 +22,8 @@
         <link rel="stylesheet" href="/resources/vendor/css/assets/css/styles.css">
         <link rel="stylesheet" href="/resources/vendor/css/assets/css/Table-With-Search-1.css">
         <link rel="stylesheet" href="/resources/vendor/css/assets/css/Table-With-Search.css">
+        <link rel="stylesheet" href="/resources/vendor/css/assets/css/Login-Center.css">
+        <link rel="stylesheet" href="/resources/vendor/css/assets/css/Login-Form-Clean.css">
 
 
 

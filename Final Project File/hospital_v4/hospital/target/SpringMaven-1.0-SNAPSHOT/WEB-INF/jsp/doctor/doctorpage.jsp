@@ -49,16 +49,16 @@
                             <section>
                                 <ul class="nav nav-pills" id="myTab" role="tablist">
                                     <li class="nav-item waves-effect waves-light">
-                                        <a class="nav-link" id="home-tab" data-toggle="tab" href="#insert" role="tab" aria-controls="home" aria-selected="false">Insert Staff Data</a>
+                                        <a class="nav-link" id="home-tab" data-toggle="tab" href="#insert" role="tab" aria-controls="home" aria-selected="false">Insert Doctor Data</a>
                                     </li>
                                     <li class="nav-item waves-effect waves-light">
-                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#update" role="tab" aria-controls="profile" aria-selected="false">Update Staff Data</a>
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#update" role="tab" aria-controls="profile" aria-selected="false">Update Doctor Data</a>
                                     </li>
                                     <li class="nav-item waves-effect waves-light">
-                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#view" role="tab" aria-controls="profile" aria-selected="false">View Staff Data</a>
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#view" role="tab" aria-controls="profile" aria-selected="false">View Doctor Data</a>
                                     </li>
                                     <li class="nav-item waves-effect waves-light">
-                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#delete" role="tab" aria-controls="profile" aria-selected="false">Delete Staff Data</a>
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#delete" role="tab" aria-controls="profile" aria-selected="false">Delete Doctor Data</a>
                                     </li>
                                 </ul>
                                 <div class="tab-content" id="myTabContent">
@@ -67,7 +67,7 @@
                                         <section>
                                             <div class="container-fluid">
                                                 <div class="container mt-5">
-                                                    <div><h4 class="p-0 m-0 pb-3 d-flex justify-content-center">Insert Staff Details</h4></div>
+                                                    <div><h4 class="p-0 m-0 pb-3 d-flex justify-content-center">Insert Doctor Details</h4></div>
                                                     <form action="/doctor/save" method="post">
                                                         <div class="form-row p-0 m-0">
                                                             <div class="col-lg-6 col-xl-6 p-0 m-0 p-3">
@@ -186,7 +186,7 @@
                                         <section>
                                             <div class="container-fluid">
                                                 <div class="container mt-5">
-                                                    <div><h4 class="p-0 m-0 pb-3 d-flex justify-content-center">Update Staff Details</h4></div>
+                                                    <div><h4 class="p-0 m-0 pb-3 d-flex justify-content-center">Update Doctor Details</h4></div>
                                                     <form >
                                                         <div class="form-row p-0 m-0">
                                                             <div class="col-lg-6 col-xl-6 p-0 m-0 p-3">
@@ -211,7 +211,7 @@
                                             <div class="container-fluid">
                                                 <div class="container mt-5">
 
-                                                    <div><h4 class="p-0 m-0 pb-3 d-flex justify-content-center">List Of Staff Details</h4></div>
+                                                    <div><h4 class="p-0 m-0 pb-3 d-flex justify-content-center">List Of Doctor Details</h4></div>
 
                                                     <table class="table">
                                                         <thead>
@@ -260,7 +260,7 @@
 
                                             <div class="container-fluid">
                                                 <div class="container mt-5">
-                                                    <div ><h4 class="p-0 m-0 pb-3 d-flex justify-content-center">Delete Staff Details</h4></div>
+                                                    <div ><h4 class="p-0 m-0 pb-3 d-flex justify-content-center">Delete Doctor Details</h4></div>
 
                                                     <form class="form-inline d-none d-sm-inline-block mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                                                         <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">

@@ -19,21 +19,21 @@ import org.springframework.stereotype.Service;
  * @author mohdm
  */
 @Service(value = "employeeService")
-public class EmployeeService implements IEmployeeService{
+public class EmployeeService implements IEmployeeService {
 
     @Autowired
     IEmployeeDAO employeeDAO;
-    
+
     @Override
     public Employee save(HttpServletRequest request) {
-       Map<String, String[]> map = request.getParameterMap();
-       Employee e = new Employee();
-       e.setName(map.get("name")[0]);
-       e.setSalary(Double.parseDouble(map.get("salary")[0]));
-       e.setNid(Integer.parseInt(map.get("nid")[0]));
-       e.setArea(map.get("area")[0]);
-       e.setCity(map.get("city")[0]);
-       return employeeDAO.save(e);
+        Map<String, String[]> map = request.getParameterMap();
+        Employee e = new Employee();
+        e.setName(map.get("name")[0]);
+        e.setSalary(Double.parseDouble(map.get("salary")[0]));
+        e.setNid(Integer.parseInt(map.get("nid")[0]));
+        e.setArea(map.get("area")[0]);
+        e.setCity(map.get("city")[0]);
+        return employeeDAO.save(e);
     }
 
     @Override
@@ -56,5 +56,4 @@ public class EmployeeService implements IEmployeeService{
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-   
 }
