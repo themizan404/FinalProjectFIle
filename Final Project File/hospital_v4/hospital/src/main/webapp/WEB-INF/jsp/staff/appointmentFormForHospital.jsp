@@ -44,7 +44,7 @@
                         <div class="col-xl-12 mb-4 mb-xl-0">
                             <!-- Section: Live preview -->
                             <section>
-                                <form action="/hospitalappointment/save" method="post">
+                                <form action="/appointment/save" method="post">
                                     <div class="form-row p-0 m-0">
                                         <div class="col-lg-6 col-xl-6 p-0 m-0 p-3">
                                             <!--<div class="form-group"><input class="form-control" type="number" placeholder="Admin Id" name="adminid"  nullable = true></div>-->

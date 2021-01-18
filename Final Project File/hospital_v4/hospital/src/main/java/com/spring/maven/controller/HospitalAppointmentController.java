@@ -23,7 +23,7 @@ import org.springframework.web.servlet.ModelAndView;
  * @author mohdm
  */
 @RestController
-@RequestMapping(value = "/hospitalappointment")
+@RequestMapping(value = "/physicalappointment")
 public class HospitalAppointmentController implements IHospitalAppointmentController {
 
     @Autowired
@@ -63,11 +63,16 @@ public class HospitalAppointmentController implements IHospitalAppointmentContro
     }
 
     @Override
+    @RequestMapping(value = "/list")
     public ModelAndView getAllHospitalAppointment() {
         List<HospitalAppointment> hospitalAppointments = hospitalAppointmentService.getAll();
         Map<String, Object> map = new HashMap<>();
         map.put("hospitalAppointments", hospitalAppointments);
-        return new ModelAndView("");
+//        for (HospitalAppointment appointment : hospitalAppointments) {
+//            System.out.print(appointment.getPatient_address() + " ");
+//            System.out.print(appointment.getPatient_nid() + " ");
+//        }
+        return new ModelAndView("doctor/physicalappointment", "map", map);
     }
 
 }

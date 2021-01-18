@@ -55,7 +55,6 @@ com\spring\maven\controller\OnlineAppointmentController.class
 com\spring\maven\model\OnlineAppointment.class
 com\spring\maven\controller\DoctorController.class
 com\spring\maven\service\impl\IMedicineService.class
-com\spring\maven\controller\DoctorPage.class
 com\spring\maven\dao\impl\IOnlineAppointmentDAO.class
 com\spring\maven\dao\impl\IHospitalAppointmentDAO.class
 com\spring\maven\dao\OnlineAppointmentDAO.class

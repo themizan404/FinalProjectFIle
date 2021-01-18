@@ -47,22 +47,42 @@ public class AdminService implements IAdminService {
 
     @Override
     public Admin update(HttpServletRequest request) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        int id = Integer.parseInt(request.getParameter("id"));
+        int admin_nid = Integer.parseInt(request.getParameter("admin_nid"));
+        String admin_name = request.getParameter("admin_name");
+        String admin_role = request.getParameter("admin_role");
+        String admin_password = request.getParameter("admin_password");
+        String hospital_number = request.getParameter("hospital_number");
+        String hospital_name = request.getParameter("hospital_name");
+        String hospital_type = request.getParameter("hospital_type");
+        String hospital_location = request.getParameter("hospital_location");
+        Admin admin = new Admin();
+        admin.setId(id);
+        admin.setAdmin_nid(admin_nid);
+        admin.setAdmin_name(admin_name);
+        admin.setAdmin_role(admin_role);
+        admin.setAdmin_password(admin_password);
+        admin.setHospital_number(hospital_number);
+        admin.setHospital_name(hospital_name);
+        admin.setHospital_type(hospital_type);
+        admin.setHospital_location(hospital_location);
+        return adminDAO.save(admin);
     }
 
     @Override
     public Admin delete(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return adminDAO.delete(id);
     }
 
     @Override
     public List<Admin> getAll() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        List<Admin> admins = adminDAO.getAll();
+        return admins;
     }
 
     @Override
     public Admin getById(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return adminDAO.getById(id);
     }
 
 }

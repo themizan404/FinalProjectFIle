@@ -53,16 +53,26 @@ public class IndexController {
 
     }
 
-    @RequestMapping("doctor/waitinglist")
-    public ModelAndView waitingList() {
-        return new ModelAndView("doctor/doctorWaitingList");
+    @RequestMapping("doctor/dashboard")
+    public ModelAndView doctorDashboard() {
+        return new ModelAndView("doctor/doctordashboard");
 
     }
 
-    @RequestMapping("doctor/Prescription")
-    public ModelAndView patientPrescription() {
-        return new ModelAndView("doctor/PatientPrescription");
+    @RequestMapping("doctor/onlineappointment")
+    public ModelAndView onlineList() {
+        return new ModelAndView("doctor/onlineappointment");
 
     }
 
+//    @RequestMapping("doctor/physicalappointment")
+//    public ModelAndView physicalList() {
+//        return new ModelAndView("doctor/physicalappointment");
+//
+//    }
+//    @RequestMapping("doctor/prescription")
+//    public ModelAndView patientPrescription() {
+//        return new ModelAndView("doctor/patientprescription");
+//
+//    }
 }

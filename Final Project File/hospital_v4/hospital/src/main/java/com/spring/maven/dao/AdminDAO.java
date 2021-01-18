@@ -33,22 +33,33 @@ public class AdminDAO implements IAdminDAO {
 
     @Override
     public Admin update(Admin t) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        sessionFactory.getCurrentSession().saveOrUpdate(t);
+        sessionFactory.getCurrentSession().flush();
+        return t;
     }
 
     @Override
     public Admin delete(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        Admin admin = (Admin) sessionFactory.getCurrentSession().load(Admin.class, id);
+        sessionFactory.getCurrentSession().delete(admin);
+        sessionFactory.getCurrentSession().flush();
+        return admin;
     }
 
     @Override
     public List<Admin> getAll() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        List<Admin> admins = sessionFactory.getCurrentSession().createCriteria(Admin.class).list();
+        sessionFactory.getCurrentSession().flush();
+        return admins;
+
     }
 
     @Override
     public Admin getById(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        Admin admin = (Admin) sessionFactory.getCurrentSession().get(Admin.class, id);
+        sessionFactory.getCurrentSession().flush();
+        return admin;
+
     }
 
 }

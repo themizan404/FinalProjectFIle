@@ -75,16 +75,66 @@
 
 
 
-                                                <td><a href="/info/admin/adminEdit/${admin.id}" ><button class="btn btn-info mb-1"><i class="fa fa-edit" aria-hidden="true"></i></button></a>  
+                                                <td>
+                                                    <a href="#" ><button class="btn btn-info mb-1" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-edit" aria-hidden="true"></i></button></a>  
+
+                                                </td>
+                                                <td>
+                                                    <a href="/info/admin/adminEdit/${admin.id}" ><button class="btn btn-info mb-1"><i class="fa fa-edit" aria-hidden="true"></i></button></a>  
                                                     <a href="/info/admin/adminDelete/${admin.id}" ><button class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></button></a>
 
-                                                    <!--                                                <button class="btn btn-success" style="margin-left: 5px;width: 36px;" type="submit"><i class="fa fa-check" style="font-size: 15px;"></i></button>
-                                                                                                    <button class="btn btn-danger" style="margin-left: 5px;width: 36px;" type="submit"><i class="fa fa-trash" style="font-size: 15px;"></i></button>-->
                                                 </td>
+
                                             </tr>
                                         </c:forEach>
                                     </tbody>
                                 </table>
+
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+
+                                                <form>
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <span class="text-primary input-group-text"><i class="fa fa-envelope-o"></i></span>
+                                                            </div><input class="form-control" type="email" required="" placeholder="Email">
+                                                            <div class="input-group-append"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <span class="text-primary input-group-text"><i class="fa fa-lock"></i></span>
+                                                            </div><input class="form-control" type="password" required="" placeholder="Password">
+                                                            <div class="input-group-append"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group"><button class="btn btn-primary btn-lg text-white" style="width: 100%;" type="button">Log in</button></div>
+                                                </form>
+
+
+
+
+
+
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
 
