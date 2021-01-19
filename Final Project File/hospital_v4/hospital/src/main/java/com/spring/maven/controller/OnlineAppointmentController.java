@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -44,8 +45,12 @@ public class OnlineAppointmentController implements IOnlineAppointmentController
     }
 
     @Override
-    public ModelAndView edit(int id) {
-        return null;
+    @RequestMapping(value = "/appointmentform/{id}", method = RequestMethod.GET)
+    public ModelAndView edit(@PathVariable("id") int id) {
+        Map<String, Object> map = new HashMap<String, Object>();
+        OnlineAppointment onlineAppointment = onlineAppointmentService.getById(id);
+        map.put("onlineAppointment", onlineAppointment);
+        return new ModelAndView("/staff/appointmentFormForHospital", "map", map);
     }
 
     @Override

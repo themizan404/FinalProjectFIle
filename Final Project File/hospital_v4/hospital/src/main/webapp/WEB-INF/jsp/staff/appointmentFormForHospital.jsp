@@ -1,4 +1,6 @@
 <jsp:include page="/WEB-INF/jsp/common/home/header.jsp" />
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <div id="wrapper">
     <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bgm" >
         <div class="container-fluid d-flex flex-column p-0">
@@ -12,7 +14,7 @@
                 <li class="nav-item" role="presentation"><a class="nav-link active" href="/staff/dashboard"><i class="fas fa-tachometer-alt" style="color: rgba(197,1,1,0.74);"></i><span style="color: rgb(0,21,211);">Dashboard</span></a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link" href="/staff/appointmentform"><i class="fas fa-clinic-medical" style="color: rgba(197,1,1,0.74);"></i><span style="color: #0e20c2;"><strong>Appointment Form</strong><br></span></a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link" href="/onlineappointment/list"><i class="fas fa-user" style="color: rgba(197,1,1,0.74);"></i><span style="color: #0e20c2;"><strong>Online Appointment List</strong><br></span></a></li>
-
+                <li class="nav-item" role="presentation"><a class="nav-link" href="/inviocelist"><i class="fas fa-user" style="color: rgba(197,1,1,0.74);"></i><span style="color: #0e20c2;"><strong>Invoice List</strong><br></span></a></li>
             </ul>
             <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
         </div>
@@ -44,7 +46,7 @@
                         <div class="col-xl-12 mb-4 mb-xl-0">
                             <!-- Section: Live preview -->
                             <section>
-                                <form action="/appointment/save" method="post">
+                                <form action="/physicalappointment/save" method="post">
                                     <div class="form-row p-0 m-0">
                                         <div class="col-lg-6 col-xl-6 p-0 m-0 p-3">
                                             <!--<div class="form-group"><input class="form-control" type="number" placeholder="Admin Id" name="adminid"  nullable = true></div>-->
@@ -55,7 +57,7 @@
                                                         Patient NID
                                                     </strong>
                                                 </label>
-                                                <input class="form-control" type="text" id="patient_nid" name="patient_nid" style="font-size: 30px"/></div>
+                                                <input class="form-control" value="${map.onlineAppointment.patient_nid}" type="text" id="patient_nid" name="patient_nid" style="font-size: 30px"/></div>
                                             <div class="form-group">
                                                 <label>
                                                     <strong>

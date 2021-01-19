@@ -5,6 +5,14 @@
  */
 package com.spring.maven.controller;
 
+import com.spring.maven.model.HospitalAppointment;
+import com.spring.maven.model.OnlineAppointment;
+import com.spring.maven.service.impl.IHospitalAppointmentService;
+import com.spring.maven.service.impl.IOnlineAppointmentService;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
@@ -15,6 +23,12 @@ import org.springframework.web.servlet.ModelAndView;
  */
 @RestController()
 public class IndexController {
+
+    @Autowired
+    IHospitalAppointmentService hospitalAppointmentService;
+
+    @Autowired
+    IOnlineAppointmentService onlineAppointmentService;
 
     @RequestMapping("/")
     public ModelAndView index() {
@@ -65,6 +79,42 @@ public class IndexController {
 
     }
 
+    @RequestMapping("/inviocelist")
+    public ModelAndView invoiceList() {
+        return new ModelAndView("staff/invoiceList");
+
+    }
+
+//   @RequestMapping("/hospitalinvoice")
+//    public ModelAndView hospitalInvoice() {
+//        return new ModelAndView("staff/hospitalInvoice");
+//
+//    }
+//    @RequestMapping("/onlineinvoice")
+//    public ModelAndView onlineInvoice() {
+//        return new ModelAndView("staff/onlineInvoice");
+//
+//    }
+    @RequestMapping(value = "/hospitalinvoice")
+    public ModelAndView getAllHospitalAppointment() {
+        List<HospitalAppointment> hospitalAppointments = hospitalAppointmentService.getAll();
+        Map<String, Object> map = new HashMap<>();
+        map.put("hospitalAppointments", hospitalAppointments);
+//        for (HospitalAppointment appointment : hospitalAppointments) {
+//            System.out.print(appointment.getPatient_address() + " ");
+//            System.out.print(appointment.getPatient_nid() + " ");
+//        }
+        return new ModelAndView("staff/hospitalInvoice", "map", map);
+    }
+
+    @RequestMapping(value = "/onlineinvoice")
+    public ModelAndView getAllAppointment() {
+
+        List<OnlineAppointment> onlineAppointments = onlineAppointmentService.getAll();
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("onlineAppointments", onlineAppointments);
+        return new ModelAndView("staff/onlineInvoice", "map", map);
+    }
 //    @RequestMapping("doctor/physicalappointment")
 //    public ModelAndView physicalList() {
 //        return new ModelAndView("doctor/physicalappointment");

@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -43,8 +44,12 @@ public class HospitalAppointmentController implements IHospitalAppointmentContro
     }
 
     @Override
-    public ModelAndView edit(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    @RequestMapping(value = "/hospitalinvoice/{id}", method = RequestMethod.GET)
+    public ModelAndView edit(@PathVariable("id") int id) {
+        Map<String, Object> map = new HashMap<>();
+        HospitalAppointment hospitalAppointment = hospitalAppointmentService.getById(id);
+        map.put("hospitalAppointment", hospitalAppointment);
+        return new ModelAndView("invoice/hospitalinvoicepage", "map", map);
     }
 
     @Override
@@ -68,10 +73,7 @@ public class HospitalAppointmentController implements IHospitalAppointmentContro
         List<HospitalAppointment> hospitalAppointments = hospitalAppointmentService.getAll();
         Map<String, Object> map = new HashMap<>();
         map.put("hospitalAppointments", hospitalAppointments);
-//        for (HospitalAppointment appointment : hospitalAppointments) {
-//            System.out.print(appointment.getPatient_address() + " ");
-//            System.out.print(appointment.getPatient_nid() + " ");
-//        }
+
         return new ModelAndView("doctor/physicalappointment", "map", map);
     }
 

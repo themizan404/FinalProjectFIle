@@ -75,10 +75,10 @@
 
 
 
-                                                <td>
-                                                    <a href="#" ><button class="btn btn-info mb-1" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-edit" aria-hidden="true"></i></button></a>  
-
-                                                </td>
+                                                <!--                                                <td>
+                                                                                                    <a href="#" ><button class="btn btn-info mb-1" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-edit" aria-hidden="true"></i></button></a>  
+                                                
+                                                                                                </td>-->
                                                 <td>
                                                     <a href="/info/admin/adminEdit/${admin.id}" ><button class="btn btn-info mb-1"><i class="fa fa-edit" aria-hidden="true"></i></button></a>  
                                                     <a href="/info/admin/adminDelete/${admin.id}" ><button class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></button></a>
