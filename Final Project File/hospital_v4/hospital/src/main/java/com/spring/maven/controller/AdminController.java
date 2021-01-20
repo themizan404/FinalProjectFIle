@@ -48,7 +48,7 @@ public class AdminController implements IAdminController {
 
     public ModelAndView edit(@PathVariable("id") int id) {
         Map<String, Object> map = new HashMap<String, Object>();
-        Admin admin = adminService.getById(id);
+        Admin admin = adminService.getById(id); 
         map.put("admin", admin);
         return new ModelAndView("admin/adminUpdate", "map", map);
     }

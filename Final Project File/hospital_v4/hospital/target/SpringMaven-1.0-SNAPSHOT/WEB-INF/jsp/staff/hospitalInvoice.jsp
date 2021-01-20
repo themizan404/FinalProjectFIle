@@ -81,7 +81,7 @@
 
 
                                                 <td><a href="/physicalappointment/hospitalinvoice/${hospitalAppointment.id}" ><button class="btn btn-info"> Invoice </button></a>  
-                                                    <a href="/info/admin/adminDelete/${hospitalAppointment.id}" ><button class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></button></a>
+                                                    <!--<a href="/physicalappointment/hospitaldelete/${hospitalAppointment.id}" ><button class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></button></a>-->
 
                                                     <!--                                                <button class="btn btn-success" style="margin-left: 5px;width: 36px;" type="submit"><i class="fa fa-check" style="font-size: 15px;"></i></button>
                                                                                                     <button class="btn btn-danger" style="margin-left: 5px;width: 36px;" type="submit"><i class="fa fa-trash" style="font-size: 15px;"></i></button>-->

@@ -73,8 +73,14 @@ public class IndexController {
 
     }
 
-    @RequestMapping("doctor/onlineappointment")
-    public ModelAndView onlineList() {
+    @RequestMapping("/doctor/hospitalappointment")
+    public ModelAndView doctorHospitalList() {
+        return new ModelAndView("doctor/physicalappointment");
+
+    }
+
+    @RequestMapping("/doctor/onlineappointment")
+    public ModelAndView doctorOnlineList() {
         return new ModelAndView("doctor/onlineappointment");
 
     }

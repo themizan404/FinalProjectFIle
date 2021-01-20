@@ -9,8 +9,8 @@
             <hr class="sidebar-divider my-0">
             <ul
                 class="nav navbar-nav text-light" id="accordionSidebar">
-                <li class="nav-item" role="presentation"><a class="nav-link active" href="#"><i class="fas fa-tachometer-alt" style="color: rgba(197,1,1,0.74);"></i><span style="color: rgb(0,21,211);">Physical Appointment</span></a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link active" href="#"><i class="fas fa-tachometer-alt" style="color: rgba(197,1,1,0.74);"></i><span style="color: rgb(0,21,211);">Online Appointment</span></a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link active" href="/doctor/hospitalappointment"><i class="fas fa-tachometer-alt" style="color: rgba(197,1,1,0.74);"></i><span style="color: rgb(0,21,211);">Physical Appointment</span></a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link active" href="/doctor/hospitalappointment#"><i class="fas fa-tachometer-alt" style="color: rgba(197,1,1,0.74);"></i><span style="color: rgb(0,21,211);">Online Appointment</span></a></li>
 
             </ul>
             <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
@@ -93,6 +93,8 @@
             
                             </div>
                         </div>-->
+
+            <h1>Welcome</h1>
         </div>
     </div>
 </div>

@@ -58,8 +58,11 @@ public class HospitalAppointmentController implements IHospitalAppointmentContro
     }
 
     @Override
-    public ModelAndView delete(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    @RequestMapping(value = "/hospitaldelete/{id}", method = RequestMethod.GET)
+    public ModelAndView delete(@PathVariable("id") int id) {
+        hospitalAppointmentService.delete(id);
+        return new ModelAndView("redirect:/staff/hospitalInvoice");
+
     }
 
     @Override
