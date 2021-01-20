@@ -10,8 +10,9 @@
             <hr class="sidebar-divider my-0">
             <ul
                 class="nav navbar-nav text-light" id="accordionSidebar">
-                <li class="nav-item" role="presentation"><a class="nav-link active" href="/doctor/hospitalappointment"><i class="fas fa-tachometer-alt" style="color: rgba(197,1,1,0.74);"></i><span style="color: rgb(0,21,211);">Physical Appointment</span></a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link active" href="/doctor/onlineappointment"><i class="fas fa-tachometer-alt" style="color: rgba(197,1,1,0.74);"></i><span style="color: rgb(0,21,211);">Online Appointment</span></a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link active" href="/doctor/dashboard"><i class="fas fa-tachometer-alt" style="color: rgba(197,1,1,0.74);"></i><span style="color: rgb(0,21,211);">Dashboard</span></a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link active" href="/doctor/hospitalappointment"><i class="fas fa-tachometer-alt" style="color: rgba(197,1,1,0.74);"></i><span style="color: rgb(0,21,211);">Appointment list</span></a></li>
+                <!--<li class="nav-item" role="presentation"><a class="nav-link active" href="/doctor/onlineappointment"><i class="fas fa-tachometer-alt" style="color: rgba(197,1,1,0.74);"></i><span style="color: rgb(0,21,211);">Online Appointment</span></a></li>-->
                 <!--<li class="nav-item" role="presentation"><a class="nav-link" href="doctorpage"><i class="fas fa-clinic-medical" style="color: rgba(197,1,1,0.74);"></i><span style="color: #0e20c2;"><strong>Doctor</strong><br></span></a></li>-->
 
             </ul>

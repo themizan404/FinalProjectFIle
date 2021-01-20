@@ -37,7 +37,8 @@
                         <li class="nav-item dropdown no-arrow" role="presentation"><a class="nav-link" href="#"><button class="btn btn-primary" type="button">Logout</button></a></li>
                     </ul>
                 </div>
-            </nav><button class="btn btn-primary hidden-print" onclick="myFunction()"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print</button>
+            </nav>
+            <button class="btn btn-primary hidden-print" onclick="myFunction()"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print</button>
             <div class="container" style="margin-bottom: 10px;">
                 <div class="row">
                     <div class="col">

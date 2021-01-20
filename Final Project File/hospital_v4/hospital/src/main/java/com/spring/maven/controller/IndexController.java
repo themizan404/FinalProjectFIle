@@ -106,10 +106,7 @@ public class IndexController {
         List<HospitalAppointment> hospitalAppointments = hospitalAppointmentService.getAll();
         Map<String, Object> map = new HashMap<>();
         map.put("hospitalAppointments", hospitalAppointments);
-//        for (HospitalAppointment appointment : hospitalAppointments) {
-//            System.out.print(appointment.getPatient_address() + " ");
-//            System.out.print(appointment.getPatient_nid() + " ");
-//        }
+
         return new ModelAndView("staff/hospitalInvoice", "map", map);
     }
 
@@ -126,9 +123,10 @@ public class IndexController {
 //        return new ModelAndView("doctor/physicalappointment");
 //
 //    }
-//    @RequestMapping("doctor/prescription")
-//    public ModelAndView patientPrescription() {
-//        return new ModelAndView("doctor/patientprescription");
-//
-//    }
+
+    @RequestMapping("doctor/prescription")
+    public ModelAndView patientPrescription() {
+        return new ModelAndView("doctor/patientprescription");
+
+    }
 }
