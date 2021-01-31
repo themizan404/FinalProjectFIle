@@ -1,9 +1,0 @@
-
-CREATE TABLE  `hospitaldata`.`onlineappointment` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `patient_nid` varchar(45) NOT NULL,
-  `patient_problem` varchar(45) NOT NULL,
-  `contact_number` varchar(45) NOT NULL,
-  `AppointmentDate` varchar(45) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;

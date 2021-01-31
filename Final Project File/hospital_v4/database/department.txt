@@ -1,6 +1,0 @@
-
-CREATE TABLE  `hospitaldata`.`department` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `department_name` varchar(45) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
